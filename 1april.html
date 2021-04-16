@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .container {
+            border: 2px white;
+            background:lightblue;
+            margin: auto;
+            padding: 50px;
+        }
+        input{
+            padding: 4px;
+        }
+        button{
+           size: 40px;
+           padding: 5px;
+           margin: 10px;
+        }
+        select{
+            size: 50px;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+       <h1> Signup form</h1>
+       <label for="name"> Name  : </label>
+       <input type="text" placeholder="name" id="name"> <br><br>
+       <label for="fname"> F'Name : </label>
+       <input type="text" placeholder="fname" id="fname"> <br><br>
+       <label for="email">E mail : </label>
+       <input type="email" placeholder="email" id="email" required> <br> <br>
+
+       <h4> Gender</h4>
+       <input type="radio" name="male" id="male"> Male
+       <input type="radio" name="female" id="female"> Female
+      <form action="">
+     <h4>Date of Birth</h4>
+       <select name="day" id="day">
+       <option value="1"> 1 </option>
+       <option value="2"> 2 </option> </select>
+       <select name="month" id="month"> 
+       <option value="January"> January </option>
+       <option value="february"> february </option>
+    </select>
+       <select name="year" id="year"> 
+       <option value="1999"> 1999 </option>
+       <option value="2000"> 2000 </option>
+    </select>
+    </form>
+    <br><br>
+    <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signup">Sign Up</button>
+      </div>
+
+
+
+
+   </div>
+</body>
+</html>

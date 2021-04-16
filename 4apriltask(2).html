@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box</title>
+    <style>
+        .box {
+
+            width: 0;
+            height: 0;
+            position: absolute;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid red;
+
+        }
+
+        .box:before {
+            content: "";
+            width: 0;
+            height: 0;
+            position: relative;
+            border-left: 55px solid transparent;
+            border-right: 55px solid transparent;
+            border-bottom: 105px solid rgb(0, 0, 0);
+            z-index: -1;
+            top: -21px;
+            right: 55px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+
+    </div>
+</body>
+
+</html>
